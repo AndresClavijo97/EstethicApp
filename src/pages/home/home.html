@@ -10,10 +10,14 @@
 <ion-content padding>
   <h3>Lista de pacientes</h3>
 
+  <!-- barra de busqueda -->
   <ion-searchbar (ionInput)="getPatients($event);"></ion-searchbar>
 
+  <!-- inicio de listado de pacientes -->
   <ion-list>
+    <!-- inicio de sliding o item con propiedad de desplazamiento -->
     <ion-item-sliding>
+      <!-- definicion del componente paciente en la vista -->
         <ion-item>
             <ion-avatar item-start>
               <img src="../../assets/icon/favicon.ico" alt="">
@@ -21,12 +25,16 @@
             <h2>Nombre completo del Paciente.</h2>
             <p style="word-wrap: break-word; white-space: normal"> Numero Telefonico</p>
         </ion-item>
+      <!-- fin del componente paciente en la vista -->
 
+
+      <!-- etiqueta options con atributo side para darle la posicion en el sliding -->
       <ion-item-options side="right">
+        <!-- boton editar -->
         <button ion-button color="primary">
           <ion-icon name="create"></ion-icon>
         </button>
-
+        <!-- boton borrar -->
         <button ion-button color="danger">
             <ion-icon name="trash"></ion-icon>
         </button>
@@ -34,6 +42,7 @@
     </ion-item-sliding>
   </ion-list>
 
+  <!-- componente icono con propiedades de posicionamiento rigth y bottom  -->
   <ion-fab right bottom>
     <button ion-fab color="primary">
       <ion-icon name="add-circle"></ion-icon>
@@ -42,5 +51,4 @@
 
 
   <button ion-button full (click)="goToCreatePatientPage();">Crear paciente</button>
-  <button ion-button full>Editar datos de paciente</button>
 </ion-content>
