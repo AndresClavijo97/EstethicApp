@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>editPatient</ion-title>
+  <ion-navbar color="create">
+    <ion-title>Paciente</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,36 @@
 
 <ion-content padding>
 
+    <ion-card-content>
+        <!-- (ngSubmit)="method();" -->
+      <form >
+        <ion-list>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Cedula"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input type="text" placeholder="Nombres"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Apellidos"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Numero Celular"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-textarea type="text" placeholder="Descripcion"></ion-textarea>
+          </ion-item>
+        
+
+          <button ion-button full>Editar datos de paciente</button>
+
+        </ion-list>
+      </form>
+
+    </ion-card-content>
 </ion-content>
