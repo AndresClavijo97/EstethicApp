@@ -13,13 +13,25 @@
   <ion-searchbar (ionInput)="getPatients($event);"></ion-searchbar>
 
   <ion-list>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/icon/favicon.ico" alt="">
-      </ion-avatar>
-      <h2>Nombre completo del Paciente.</h2>
-      <p style="word-wrap: break-word; white-space: normal"> Numero Telefonico</p>
-    </ion-item>
+    <ion-item-sliding>
+        <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/icon/favicon.ico" alt="">
+            </ion-avatar>
+            <h2>Nombre completo del Paciente.</h2>
+            <p style="word-wrap: break-word; white-space: normal"> Numero Telefonico</p>
+        </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="create"></ion-icon>
+        </button>
+
+        <button ion-button color="danger">
+            <ion-icon name="trash"></ion-icon>
+        </button>
+      </ion-item-options>  
+    </ion-item-sliding>
   </ion-list>
 
   <ion-fab right bottom>
