@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+// import { ListPage } from '../pages/list/list';
 import { CreatePatientPage } from '../pages/create-patient/create-patient';
 import { EditPatientPage } from "../pages/edit-patient/edit-patient";
 
@@ -17,7 +17,6 @@ import { DataBaseSqliteProvider } from '../providers/data-base-sqlite/data-base-
   declarations: [
     MyApp,
     HomePage,
-    ListPage, 
     CreatePatientPage,
     EditPatientPage
   ],
@@ -29,7 +28,6 @@ import { DataBaseSqliteProvider } from '../providers/data-base-sqlite/data-base-
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     CreatePatientPage,
     EditPatientPage
   ],
