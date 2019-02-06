@@ -18,8 +18,8 @@ export class CreatePatientPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CreatePatientPage');
+  createPatient(){
+    
   }
 
 }
